@@ -25,7 +25,7 @@ protocol ReqeustConfig {
     /// 参数
     var parameter: [String : Any] { get }
 
-    /// 关联类型
+    /// 关联类型 - 响应的数据
     associatedtype Response: YJDecodable
 }
 

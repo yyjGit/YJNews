@@ -8,5 +8,7 @@ target 'YJNews' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'HandyJSON'
+  pod 'SnapKit'
+  pod 'Kingfisher'
 
 end

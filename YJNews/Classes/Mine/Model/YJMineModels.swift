@@ -1,5 +1,5 @@
 //
-//  YJMineCellModel.swift
+//  YJMineModels.swift
 //  YJNews
 //
 //  Created by yyj on 2021/2/4.
@@ -9,6 +9,7 @@ import Foundation
 import HandyJSON
 import SwiftyJSON
 
+// MARK: - MineViewModel（我的 cell 数据）
 struct MineViewModel{
     var mineCellModelArray: [[MineCellModel]]?
 }
@@ -25,7 +26,6 @@ extension MineViewModel: YJDecodable {
 
         // 解析数据
         if let data = json["data"].dictionary {
-            
             // 读取 sections
             if let sections = data["sections"]?.array {
                 
@@ -71,6 +71,44 @@ struct MineCellModel: HandyJSON {
     var url: String = ""
     var key: String = ""
     var tip_new: Int = 0
+}
+
+
+// MARK: - MineConcernCellModel（我的-我的关注 cell 数据）
+struct MineConcernCellModel  {
+    var concernArray: [MineConcern]?
+}
+extension MineConcernCellModel: YJDecodable {
+    static func parse(data: Any) -> MineConcernCellModel? {
+
+        let json = JSON(data)
+        // 请求是否成功
+        guard json["message"] == "success" else {
+            print("---- 数据解析: message != success")
+            return nil
+        }
+
+        // 解析数据
+        if let dictArray = json["data"].arrayObject {
+            // 关注 modelArrya
+            var concernArray = [MineConcern]()
+            // 遍历原始数据
+            for dict in dictArray {
+                // 使用 HandyJSON 将字典，反序列为 Model，添加导数据
+                if let concern = MineConcern.deserialize(from: dict as? NSDictionary) {
+                    concernArray.append(concern)
+                }
+            }
+        
+            // 构建 model，返回
+            let model = MineConcernCellModel(concernArray: concernArray)
+            return model
+                
+        } else {
+            print("---- 数据解析: data 为空")
+        }        
+        return nil
+    }
 }
 
 /// 我的关注

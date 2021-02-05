@@ -7,15 +7,15 @@
 
 import Foundation
 
-enum MineAPI {
+enum MineAPI<RespObj: YJDecodable> {
     case mineCellData(device_id: String) // 我的界面 cell 的数据
     case mineConcernData(device_id: String) // 我关注的数据
 }
 
-
 extension MineAPI: ReqeustConfig {
 
-    typealias Response = MineViewModel
+    // 类型别名
+    typealias Response = RespObj
     
     /// 主机地址
     var baseUrl: String {
@@ -26,11 +26,9 @@ extension MineAPI: ReqeustConfig {
     var path: String {
         switch self {
         case .mineCellData:
-            typealias Response = MineViewModel
             return "/user/tab/tabs/?"
         case .mineConcernData:
-            typealias Response = MineViewModel
-            return "123"
+            return "/concern/v2/follow/my_follow/??"
         }
     }
     
@@ -42,10 +40,10 @@ extension MineAPI: ReqeustConfig {
     /// 请求参数
     var parameter: [String : Any] {
         switch self {
-        case .mineCellData:
+        case .mineCellData(let device_id):
             return ["device_id" : device_id]
-        case .mineConcernData:
-            return [:]
-        }
+        case .mineConcernData(let device_id):
+            return ["device_id" : device_id]
+        }        
     }
 }
