@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A944FDAEB5DFF654AC15287F /* Pods_YJNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9180E610E672F9B5594B2904 /* Pods_YJNews.framework */; };
 		D9491EEF25CBB6EA003AE065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9491EEE25CBB6EA003AE065 /* Assets.xcassets */; };
 		D9491EF225CBB6EA003AE065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9491EF025CBB6EA003AE065 /* LaunchScreen.storyboard */; };
+		D98FDAFC25CBFCD700726266 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDAFB25CBFCD700726266 /* Consts.swift */; };
+		D98FDAFF25CBFD8200726266 /* YJTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDAFE25CBFD8200726266 /* YJTableViewController.swift */; };
+		D98FDB0225CBFFD900726266 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB0125CBFFD900726266 /* UIColor+Extensions.swift */; };
+		D98FDB0925CC0D4400726266 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB0825CC0D4400726266 /* BaseNetwork.swift */; };
+		D98FDB1225CC238500726266 /* YJMineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1125CC238500726266 /* YJMineCellModel.swift */; };
+		D98FDB1625CC2A9A00726266 /* MineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1525CC2A9A00726266 /* MineAPI.swift */; };
+		D98FDB1B25CC2BAC00726266 /* ReqeustConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */; };
+		D991428925CCD95200091FF2 /* YJBaseTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991428825CCD95200091FF2 /* YJBaseTCell.swift */; };
+		D991428C25CCD95F00091FF2 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991428B25CCD95F00091FF2 /* MineTableViewCell.swift */; };
 		D9E09E5B25CBF9A6007F2842 /* YJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E3D25CBF9A6007F2842 /* YJHomeViewController.swift */; };
 		D9E09E5C25CBF9A6007F2842 /* YJVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E4225CBF9A6007F2842 /* YJVideoViewController.swift */; };
 		D9E09E5D25CBF9A6007F2842 /* YJHuoShanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E4725CBF9A6007F2842 /* YJHuoShanViewController.swift */; };
@@ -29,6 +38,15 @@
 		D9491EE225CBB6EA003AE065 /* YJNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9491EEE25CBB6EA003AE065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9491EF125CBB6EA003AE065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98FDAFB25CBFCD700726266 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		D98FDAFE25CBFD8200726266 /* YJTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJTableViewController.swift; sourceTree = "<group>"; };
+		D98FDB0125CBFFD900726266 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D98FDB0825CC0D4400726266 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		D98FDB1125CC238500726266 /* YJMineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJMineCellModel.swift; sourceTree = "<group>"; };
+		D98FDB1525CC2A9A00726266 /* MineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineAPI.swift; sourceTree = "<group>"; };
+		D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustConfig.swift; sourceTree = "<group>"; };
+		D991428825CCD95200091FF2 /* YJBaseTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJBaseTCell.swift; sourceTree = "<group>"; };
+		D991428B25CCD95F00091FF2 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		D9E09E3D25CBF9A6007F2842 /* YJHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJHomeViewController.swift; sourceTree = "<group>"; };
 		D9E09E4225CBF9A6007F2842 /* YJVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJVideoViewController.swift; sourceTree = "<group>"; };
 		D9E09E4725CBF9A6007F2842 /* YJHuoShanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJHuoShanViewController.swift; sourceTree = "<group>"; };
@@ -90,13 +108,38 @@
 			path = YJNews;
 			sourceTree = "<group>";
 		};
+		D98FDB0725CC022E00726266 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D98FDB1925CC2B4400726266 /* Network */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D98FDB1425CC2A8E00726266 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D98FDB1525CC2A9A00726266 /* MineAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D98FDB1925CC2B4400726266 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D98FDB0825CC0D4400726266 /* BaseNetwork.swift */,
+				D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		D9E09E3A25CBF9A6007F2842 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D9E09E4A25CBF9A6007F2842 /* Others */,
 				D9E09E3B25CBF9A6007F2842 /* Home */,
 				D9E09E4025CBF9A6007F2842 /* Video */,
 				D9E09E4525CBF9A6007F2842 /* HuoShan */,
-				D9E09E4A25CBF9A6007F2842 /* Others */,
 				D9E09E4E25CBF9A6007F2842 /* Mine */,
 				D9E09E5325CBF9A6007F2842 /* Main */,
 			);
@@ -205,6 +248,7 @@
 				D9E09E4C25CBF9A6007F2842 /* Info.plist */,
 				D9E09E4B25CBF9A6007F2842 /* AppDelegate.swift */,
 				D9E09E4D25CBF9A6007F2842 /* SceneDelegate.swift */,
+				D98FDAFB25CBFCD700726266 /* Consts.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -212,6 +256,7 @@
 		D9E09E4E25CBF9A6007F2842 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				D98FDB1425CC2A8E00726266 /* Service */,
 				D9E09E4F25CBF9A6007F2842 /* Controller */,
 				D9E09E5125CBF9A6007F2842 /* Model */,
 				D9E09E5225CBF9A6007F2842 /* View */,
@@ -230,6 +275,7 @@
 		D9E09E5125CBF9A6007F2842 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D98FDB1125CC238500726266 /* YJMineCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +283,7 @@
 		D9E09E5225CBF9A6007F2842 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D991428B25CCD95F00091FF2 /* MineTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,8 +291,9 @@
 		D9E09E5325CBF9A6007F2842 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D98FDB0725CC022E00726266 /* Tools */,
 				D9E09E5425CBF9A6007F2842 /* Controller */,
-				D9E09E5825CBF9A6007F2842 /* Model */,
+				D9E09E5825CBF9A6007F2842 /* Extensions */,
 				D9E09E5925CBF9A6007F2842 /* View */,
 			);
 			path = Main;
@@ -257,21 +305,24 @@
 				D9E09E5525CBF9A6007F2842 /* YJNavigationController.swift */,
 				D9E09E5625CBF9A6007F2842 /* YJTabBarController.swift */,
 				D9E09E5725CBF9A6007F2842 /* YJBaseViewController.swift */,
+				D98FDAFE25CBFD8200726266 /* YJTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D9E09E5825CBF9A6007F2842 /* Model */ = {
+		D9E09E5825CBF9A6007F2842 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D98FDB0125CBFFD900726266 /* UIColor+Extensions.swift */,
 			);
-			path = Model;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D9E09E5925CBF9A6007F2842 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D9E09E5A25CBF9A6007F2842 /* YJTabBar.swift */,
+				D991428825CCD95200091FF2 /* YJBaseTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +347,7 @@
 				D9491EDE25CBB6EA003AE065 /* Sources */,
 				D9491EDF25CBB6EA003AE065 /* Frameworks */,
 				D9491EE025CBB6EA003AE065 /* Resources */,
+				D6AA51FE142346E9B9A3FC3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +425,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D6AA51FE142346E9B9A3FC3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YJNews/Pods-YJNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YJNews/Pods-YJNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YJNews/Pods-YJNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -382,14 +451,23 @@
 			files = (
 				D9E09E6525CBF9A6007F2842 /* YJTabBar.swift in Sources */,
 				D9E09E6125CBF9A6007F2842 /* YJMineViewController.swift in Sources */,
+				D991428925CCD95200091FF2 /* YJBaseTCell.swift in Sources */,
+				D98FDB0925CC0D4400726266 /* BaseNetwork.swift in Sources */,
+				D98FDB1225CC238500726266 /* YJMineCellModel.swift in Sources */,
 				D9E09E6025CBF9A6007F2842 /* SceneDelegate.swift in Sources */,
+				D98FDB0225CBFFD900726266 /* UIColor+Extensions.swift in Sources */,
 				D9E09E5E25CBF9A6007F2842 /* AppDelegate.swift in Sources */,
+				D98FDAFF25CBFD8200726266 /* YJTableViewController.swift in Sources */,
 				D9E09E5D25CBF9A6007F2842 /* YJHuoShanViewController.swift in Sources */,
+				D98FDB1B25CC2BAC00726266 /* ReqeustConfig.swift in Sources */,
 				D9E09E6425CBF9A6007F2842 /* YJBaseViewController.swift in Sources */,
 				D9E09E5B25CBF9A6007F2842 /* YJHomeViewController.swift in Sources */,
 				D9E09E6225CBF9A6007F2842 /* YJNavigationController.swift in Sources */,
+				D98FDAFC25CBFCD700726266 /* Consts.swift in Sources */,
 				D9E09E6325CBF9A6007F2842 /* YJTabBarController.swift in Sources */,
 				D9E09E5C25CBF9A6007F2842 /* YJVideoViewController.swift in Sources */,
+				D98FDB1625CC2A9A00726266 /* MineAPI.swift in Sources */,
+				D991428C25CCD95F00091FF2 /* MineTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
