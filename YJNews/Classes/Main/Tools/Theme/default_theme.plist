@@ -4,6 +4,10 @@
 <dict>
 	<key>images</key>
 	<dict>
+		<key>publishButtonBackgroundSelectedImage</key>
+		<string>feed_publish_press_44x44_</string>
+		<key>publishButtonBackgroundImage</key>
+		<string>feed_publish_44x44_</string>
 		<key>cellRightArrow</key>
 		<string>setting_rightarrow_8x14_</string>
 		<key>loginMobileButton</key>
@@ -20,9 +24,34 @@
 		<string>history_profile_24x24_</string>
 		<key>dayOrNightButton</key>
 		<string>dayicon_profile_night_24x24_</string>
+		<key>TabBarImages</key>
+		<dict>
+			<key>tabbar_home_image</key>
+			<string>home_tabbar_32x32_</string>
+			<key>tabbar_home_press_mage</key>
+			<string>home_tabbar_press_32x32_</string>
+			<key>tabbar_video_image</key>
+			<string>home_tabbar_32x32_</string>
+			<key>tabbar_video_press_image</key>
+			<string>video_tabbar_press_32x32_</string>
+			<key>tabbar_huoshan_image</key>
+			<string>huoshan_tabbar_32x32_</string>
+			<key>tabbar_huoshan_press_image</key>
+			<string>huoshan_tabbar_press_32x32_</string>
+			<key>tabbar_mine_image</key>
+			<string>mine_tabbar_32x32_</string>
+			<key>tabbar_mine_press_image</key>
+			<string>mine_tabbar_press_32x32_</string>
+			<key>tabbar_nologin_image</key>
+			<string>no_login_tabbar_32x32_</string>
+			<key>tabbar_nologin_press_image</key>
+			<string>no_login_tabbar_press_32x32_</string>
+		</dict>
 	</dict>
 	<key>colors</key>
 	<dict>
+		<key>tabBarTintColor</key>
+		<string>#f55a5d</string>
 		<key>tableViewBackgroundColor</key>
 		<string>#f6f6f6</string>
 		<key>separatorViewColor</key>

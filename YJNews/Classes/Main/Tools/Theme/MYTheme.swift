@@ -20,7 +20,9 @@ enum MYTheme: Int {
     /// 切换主题
     /// - Parameter isToNight: true:夜晚 false:白天
     static func switchToNight(_ isToNight: Bool) {
+
         UserDefaults.standard.set(isToNight, forKey: isNightMode)
+        NotificationCenter.default.post(name: AppThemeWillDidChangeNoti, object: nil)
         switchTo(isToNight ? .night : .day)
     }
             

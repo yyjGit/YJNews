@@ -11,6 +11,9 @@ class YJTabBar: UITabBar {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+         
+        theme_barTintColor = "colors.cellBackgroundColor"
+        theme_tintColor = "colors.tabBarTintColor"
         addSubview(publishButton)
     }
     
@@ -24,8 +27,8 @@ class YJTabBar: UITabBar {
     // open: 在任何文件中都能访问
     private lazy var publishButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setBackgroundImage(UIImage(named: "feed_publish_44x44_"), for: .normal)
-        button.setBackgroundImage(UIImage(named: "feed_publish_press_44x44_"), for: .selected)
+        button.theme_setBackgroundImage("images.publishButtonBackgroundImage", forState: .normal)
+        button.theme_setBackgroundImage("images.publishButtonBackgroundSelectedImage", forState: .selected)
         button.sizeToFit()
         return button
     }()
@@ -36,7 +39,7 @@ class YJTabBar: UITabBar {
         super.layoutSubviews()        
         // 获取 self 的 宽高
         let width = frame.width
-        let height = frame.height
+        let height: CGFloat = 49.0 //frame.height
         publishButton.center = CGPoint(x: width * 0.5, y: height * 0.5 - 1)
         
         // 重置其它按钮 frame

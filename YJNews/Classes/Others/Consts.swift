@@ -20,4 +20,7 @@ let IID: String = "5034850950"
 let isNightMode = "isNightMode"
 
 
+/// 主题将要改变（白天、夜间切换）
+let AppThemeWillDidChangeNoti = Notification.Name(rawValue: "AppThemeWillDidChangeNoti")
+
 
