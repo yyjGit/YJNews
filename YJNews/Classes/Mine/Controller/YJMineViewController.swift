@@ -91,8 +91,7 @@ extension YJMineViewController {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 44))
-        view.backgroundColor = UIColor.defaultBackgroundColor
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 44))    
         return view
     }
     

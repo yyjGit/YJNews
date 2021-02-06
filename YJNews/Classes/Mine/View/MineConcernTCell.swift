@@ -55,9 +55,11 @@ class MineConcernTCell: YJBaseTCell {
         contentView.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
+        contentView.bringSubviewToFront(separatorView)
         
-
-        contentView.bringSubviewToFront(separatorView)        
+        leftLabel.theme_textColor = "colors.black"
+        rightLabel.theme_textColor = "colors.cellRightTextColor"
+        collectionView.theme_backgroundColor = "colors.cellBackgroundColor"        
     }
     
     required init?(coder: NSCoder) {

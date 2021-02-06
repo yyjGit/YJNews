@@ -10,5 +10,6 @@ target 'YJNews' do
   pod 'HandyJSON'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'SwiftTheme'
 
 end

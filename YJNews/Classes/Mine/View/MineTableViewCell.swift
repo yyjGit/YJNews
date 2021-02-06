@@ -35,6 +35,9 @@ class MineTableViewCell: YJBaseTCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(leftLabel)
         contentView.addSubview(rightLabel)
+        
+        leftLabel.theme_textColor = "colors.black"
+        rightLabel.theme_textColor = "colors.cellRightTextColor"        
     }    
     
     required init?(coder: NSCoder) {

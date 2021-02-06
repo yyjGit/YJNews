@@ -23,7 +23,8 @@ class YJTableViewController: YJBaseViewController {
             // 取消自动缩进 - 如果隐藏了导航栏，会缩进 20 个点
             automaticallyAdjustsScrollViewInsets = false
         }
-
+        
+        tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return tableView
     }()
 

@@ -10,7 +10,7 @@ import SnapKit
 
 class YJBaseTCell: UITableViewCell, RegisterCellOrNib {
     
-    var rightArrowsImageView: UIImageView = {
+    lazy var rightArrowsImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.image = UIImage(named: "setting_rightarrow_8x14_")
@@ -18,7 +18,7 @@ class YJBaseTCell: UITableViewCell, RegisterCellOrNib {
         return iv
     }()
     
-    var separatorView: UIView = {
+    lazy var separatorView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(r: 240, g: 240, b: 240)
         return view
@@ -35,6 +35,12 @@ class YJBaseTCell: UITableViewCell, RegisterCellOrNib {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(rightArrowsImageView)
         contentView.addSubview(separatorView)
+        
+        
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        rightArrowsImageView.theme_image = "images.cellRightArrow"
+        separatorView.theme_backgroundColor = "colors.separatorViewColor"
+        
     }
     
     required init?(coder: NSCoder) {

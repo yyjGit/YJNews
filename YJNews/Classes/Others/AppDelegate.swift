@@ -6,13 +6,14 @@
 //
 
 import UIKit
-
+import SwiftTheme
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ThemeManager.setTheme(plistName: MYTheme.isNight() ? "night_theme" : "default_theme", path: .mainBundle)
         // Override point for customization after application launch.
         return true
     }

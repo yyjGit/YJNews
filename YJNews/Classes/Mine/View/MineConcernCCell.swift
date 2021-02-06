@@ -68,7 +68,10 @@ class MineConcernCCell: UICollectionViewCell, RegisterCellOrNib  {
         contentView.addSubview(avatarImageView)
         avatarImageView.addSubview(vipImageView)
         avatarImageView.addSubview(tipsView)
-        contentView.addSubview(nameLabel)                
+        contentView.addSubview(nameLabel)
+
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        nameLabel.theme_textColor = "colors.black"
     }
     
     required init?(coder: NSCoder) {
