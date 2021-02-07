@@ -25,17 +25,12 @@ class YJBaseTCell: UITableViewCell, RegisterCellOrNib {
     }()
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        contentView.addSubview(rightArrowsImageView)
-        contentView.addSubview(separatorView)
-    }
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(rightArrowsImageView)
-        contentView.addSubview(separatorView)
+        selectionStyle = .none
         
+        contentView.addSubview(rightArrowsImageView)
+        contentView.addSubview(separatorView)        
         
         theme_backgroundColor = "colors.cellBackgroundColor"
         rightArrowsImageView.theme_image = "images.cellRightArrow"
