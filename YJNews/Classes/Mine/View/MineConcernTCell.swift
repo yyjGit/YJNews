@@ -69,7 +69,7 @@ class MineConcernTCell: YJBaseTCell {
     // MARK: - 布局
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+                        
         leftLabel.snp.makeConstraints {
             $0.left.equalTo(15)
             $0.height.equalTo(44)
@@ -78,7 +78,7 @@ class MineConcernTCell: YJBaseTCell {
         rightArrowsImageView.snp.remakeConstraints {
             $0.right.equalTo(-15)
             $0.centerY.equalTo(leftLabel)
-        }
+        }        
         rightLabel.snp.makeConstraints {
             $0.right.equalTo(rightArrowsImageView.snp.left).offset(-15)
             $0.centerY.equalTo(contentView)

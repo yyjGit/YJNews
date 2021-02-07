@@ -17,12 +17,14 @@ class YJMineViewController: YJTableViewController {
     /// 没登录是的 头视图
     lazy var noLoginHeaderView: MineNoLoginHeaderView = {
         let header = MineNoLoginHeaderView.header()
+        header.delegate = self
         return header
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight-tabbarHeight)
         // 注册 cell
         tableView.yj_registerCell(cell: MineTableViewCell.self)
         tableView.yj_registerCell(cell: MineConcernTCell.self)
@@ -113,8 +115,7 @@ extension YJMineViewController {
             }
             return cell
         }
-        
-        
+                
         let cell = tableView.yj_dequeueReusableCell(indexPath: indexPath) as MineTableViewCell
         if indexPath.section < (sections?.count ?? 0) && indexPath.row < (sections?[indexPath.section].count ?? 0) {
             cell.cellModel = sections?[indexPath.section][indexPath.row]
@@ -122,8 +123,22 @@ extension YJMineViewController {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        switch indexPath.section {
+        case 3:
+            switch indexPath.row {
+            case 1: // 系统设置
+                let vc = SysSettingViewController()
+                vc.navigationItem.title = "设置"
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                print("")
+            }
+        default:
+            print("")
+        }
     }
     
     
@@ -137,7 +152,32 @@ extension YJMineViewController {
     }
 }
 
-
+// MARK: - 未登录 头视图 点击事件
+extension YJMineViewController: MineNoLoginHeaderViewDelegate {
+    
+    func mineNoLoginHeaderViewButtonAction(_ actiontype: NoLoginHeaderViewActionType) {
+        switch actiontype {
+        case .phoneLoginAction:
+            print("手机号登录")
+        case .wxLoginAction:
+            print("微信登录")
+        case .qqLoginAction:
+            print("QQ登录")
+        case .sinaLoginAction:
+            print("微博登录")
+        case .moreLoginAction:
+            let vc = MoreLoginViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        case .favoriteAction:
+            print("收藏")
+        case .historyAction:
+            print("历史")
+        default:
+            print("other")
+        }
+    }
+}
 
 
 

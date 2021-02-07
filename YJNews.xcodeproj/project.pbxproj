@@ -19,7 +19,7 @@
 		D98FDAFF25CBFD8200726266 /* YJTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDAFE25CBFD8200726266 /* YJTableViewController.swift */; };
 		D98FDB0225CBFFD900726266 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB0125CBFFD900726266 /* UIColor+Extensions.swift */; };
 		D98FDB0925CC0D4400726266 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB0825CC0D4400726266 /* BaseNetwork.swift */; };
-		D98FDB1225CC238500726266 /* YJMineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1125CC238500726266 /* YJMineModels.swift */; };
+		D98FDB1225CC238500726266 /* YJMineCellsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1125CC238500726266 /* YJMineCellsModels.swift */; };
 		D98FDB1625CC2A9A00726266 /* MineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1525CC2A9A00726266 /* MineAPI.swift */; };
 		D98FDB1B25CC2BAC00726266 /* ReqeustConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */; };
 		D991428925CCD95200091FF2 /* YJBaseTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991428825CCD95200091FF2 /* YJBaseTCell.swift */; };
@@ -38,6 +38,11 @@
 		D9E09E6325CBF9A6007F2842 /* YJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E5625CBF9A6007F2842 /* YJTabBarController.swift */; };
 		D9E09E6425CBF9A6007F2842 /* YJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E5725CBF9A6007F2842 /* YJBaseViewController.swift */; };
 		D9E09E6525CBF9A6007F2842 /* YJTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E09E5A25CBF9A6007F2842 /* YJTabBar.swift */; };
+		D9F1AD0B25CE9173001F3AB4 /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AD0A25CE9173001F3AB4 /* MoreLoginViewController.swift */; };
+		D9F1AD2125CEDE2D001F3AB4 /* SysSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AD2025CEDE2D001F3AB4 /* SysSettingViewController.swift */; };
+		D9F1AD2425CEE742001F3AB4 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F1AD2325CEE742001F3AB4 /* setting.plist */; };
+		D9F1AD2825CEEAA2001F3AB4 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AD2725CEEAA2001F3AB4 /* SettingModel.swift */; };
+		D9F1AD2B25CEEEFC001F3AB4 /* SettingTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AD2A25CEEEFC001F3AB4 /* SettingTCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +61,7 @@
 		D98FDAFE25CBFD8200726266 /* YJTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJTableViewController.swift; sourceTree = "<group>"; };
 		D98FDB0125CBFFD900726266 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D98FDB0825CC0D4400726266 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
-		D98FDB1125CC238500726266 /* YJMineModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJMineModels.swift; sourceTree = "<group>"; };
+		D98FDB1125CC238500726266 /* YJMineCellsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJMineCellsModels.swift; sourceTree = "<group>"; };
 		D98FDB1525CC2A9A00726266 /* MineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineAPI.swift; sourceTree = "<group>"; };
 		D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustConfig.swift; sourceTree = "<group>"; };
 		D991428825CCD95200091FF2 /* YJBaseTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJBaseTCell.swift; sourceTree = "<group>"; };
@@ -76,6 +81,11 @@
 		D9E09E5625CBF9A6007F2842 /* YJTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJTabBarController.swift; sourceTree = "<group>"; };
 		D9E09E5725CBF9A6007F2842 /* YJBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBaseViewController.swift; sourceTree = "<group>"; };
 		D9E09E5A25CBF9A6007F2842 /* YJTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJTabBar.swift; sourceTree = "<group>"; };
+		D9F1AD0A25CE9173001F3AB4 /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
+		D9F1AD2025CEDE2D001F3AB4 /* SysSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysSettingViewController.swift; sourceTree = "<group>"; };
+		D9F1AD2325CEE742001F3AB4 /* setting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		D9F1AD2725CEEAA2001F3AB4 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		D9F1AD2A25CEEEFC001F3AB4 /* SettingTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +288,7 @@
 				D9E09E4B25CBF9A6007F2842 /* AppDelegate.swift */,
 				D9E09E4D25CBF9A6007F2842 /* SceneDelegate.swift */,
 				D98FDAFB25CBFCD700726266 /* Consts.swift */,
+				D9F1AD2325CEE742001F3AB4 /* setting.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -297,6 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				D9E09E5025CBF9A6007F2842 /* YJMineViewController.swift */,
+				D9F1AD0A25CE9173001F3AB4 /* MoreLoginViewController.swift */,
+				D9F1AD2025CEDE2D001F3AB4 /* SysSettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,7 +317,8 @@
 		D9E09E5125CBF9A6007F2842 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D98FDB1125CC238500726266 /* YJMineModels.swift */,
+				D98FDB1125CC238500726266 /* YJMineCellsModels.swift */,
+				D9F1AD2725CEEAA2001F3AB4 /* SettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +330,7 @@
 				D991429D25CCEF9A00091FF2 /* MineConcernTCell.swift */,
 				D91EAFD125CD1D3E00F30AC6 /* MineConcernCCell.swift */,
 				D91EAFE225CD330800F30AC6 /* MineNoLoginHeaderView.swift */,
+				D9F1AD2A25CEEEFC001F3AB4 /* SettingTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91C08CE25CD91BB00F1BCCA /* default_theme.plist in Resources */,
+				D9F1AD2425CEE742001F3AB4 /* setting.plist in Resources */,
 				D9491EF225CBB6EA003AE065 /* LaunchScreen.storyboard in Resources */,
 				D9491EEF25CBB6EA003AE065 /* Assets.xcassets in Resources */,
 				D91C08D125CD91C800F1BCCA /* night_theme.plist in Resources */,
@@ -487,6 +503,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E09E6525CBF9A6007F2842 /* YJTabBar.swift in Sources */,
+				D9F1AD2B25CEEEFC001F3AB4 /* SettingTCell.swift in Sources */,
+				D9F1AD2125CEDE2D001F3AB4 /* SysSettingViewController.swift in Sources */,
 				D9E09E6125CBF9A6007F2842 /* YJMineViewController.swift in Sources */,
 				D991429525CCE89700091FF2 /* UIView+Extensions.swift in Sources */,
 				D91C08CA25CD8EBD00F1BCCA /* MYTheme.swift in Sources */,
@@ -494,11 +512,13 @@
 				D991429B25CCEDEC00091FF2 /* UICollectionView+Extensions.swift in Sources */,
 				D91EAFD225CD1D3E00F30AC6 /* MineConcernCCell.swift in Sources */,
 				D991429E25CCEF9A00091FF2 /* MineConcernTCell.swift in Sources */,
+				D9F1AD2825CEEAA2001F3AB4 /* SettingModel.swift in Sources */,
 				D98FDB0925CC0D4400726266 /* BaseNetwork.swift in Sources */,
-				D98FDB1225CC238500726266 /* YJMineModels.swift in Sources */,
+				D98FDB1225CC238500726266 /* YJMineCellsModels.swift in Sources */,
 				D9E09E6025CBF9A6007F2842 /* SceneDelegate.swift in Sources */,
 				D98FDB0225CBFFD900726266 /* UIColor+Extensions.swift in Sources */,
 				D9E09E5E25CBF9A6007F2842 /* AppDelegate.swift in Sources */,
+				D9F1AD0B25CE9173001F3AB4 /* MoreLoginViewController.swift in Sources */,
 				D98FDAFF25CBFD8200726266 /* YJTableViewController.swift in Sources */,
 				D9E09E5D25CBF9A6007F2842 /* YJHuoShanViewController.swift in Sources */,
 				D98FDB1B25CC2BAC00726266 /* ReqeustConfig.swift in Sources */,

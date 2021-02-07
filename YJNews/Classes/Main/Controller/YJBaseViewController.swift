@@ -8,10 +8,10 @@
 import UIKit
 
 class YJBaseViewController: UIViewController {
-
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         
+        view.backgroundColor = .white
     }
 }

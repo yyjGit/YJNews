@@ -4,6 +4,11 @@
 <dict>
 	<key>images</key>
 	<dict>
+		<key>Login</key>
+		<dict>
+			<key>close_button</key>
+			<string>close_sdk_login_14x14_</string>
+		</dict>
 		<key>publishButtonBackgroundSelectedImage</key>
 		<string>feed_publish_press_44x44_</string>
 		<key>publishButtonBackgroundImage</key>

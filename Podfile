@@ -12,4 +12,6 @@ target 'YJNews' do
   pod 'Kingfisher'
   pod 'SwiftTheme'
 
+#  pod 'RxSwift'
+#  pod 'RxCocoa'
 end

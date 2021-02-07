@@ -4,6 +4,8 @@
 <dict>
 	<key>colors</key>
 	<dict>
+		<key>tabBarTintColor</key>
+		<string>#925657</string>
 		<key>tableViewBackgroundColor</key>
 		<string>#1b1b1b</string>
 		<key>separatorViewColor</key>
@@ -21,8 +23,11 @@
 	</dict>
 	<key>images</key>
 	<dict>
-		<key>tabBarTintColor</key>
-		<string>#925657</string>
+		<key>Login</key>
+		<dict>
+			<key>close_button</key>
+			<string>close_sdk_login_night_14x14_</string>
+		</dict>
 		<key>publishButtonBackgroundSelectedImage</key>
 		<string>feed_publish_press_night_44x44_</string>
 		<key>publishButtonBackgroundImage</key>
