@@ -22,6 +22,12 @@
 		D98FDB1225CC238500726266 /* YJMineCellsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1125CC238500726266 /* YJMineCellsModels.swift */; };
 		D98FDB1625CC2A9A00726266 /* MineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1525CC2A9A00726266 /* MineAPI.swift */; };
 		D98FDB1B25CC2BAC00726266 /* ReqeustConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */; };
+		D9903CDE25CFDFCD00FBA876 /* OfflineDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9903CDD25CFDFCD00FBA876 /* OfflineDownloadViewController.swift */; };
+		D9903CE125CFDFF300FBA876 /* OfflineDownloadTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9903CE025CFDFF300FBA876 /* OfflineDownloadTCell.swift */; };
+		D9903CE425CFE0F700FBA876 /* HomeNewsTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9903CE325CFE0F700FBA876 /* HomeNewsTitleModel.swift */; };
+		D9903CE825CFE31E00FBA876 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9903CE725CFE31E00FBA876 /* HomeAPI.swift */; };
+		D9903D0125D000AF00FBA876 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9903D0025D000AF00FBA876 /* SQLiteManager.swift */; };
+		D9903D0425D000DB00FBA876 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9903D0325D000DB00FBA876 /* libsqlite3.tbd */; };
 		D991428925CCD95200091FF2 /* YJBaseTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991428825CCD95200091FF2 /* YJBaseTCell.swift */; };
 		D991428C25CCD95F00091FF2 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991428B25CCD95F00091FF2 /* MineTableViewCell.swift */; };
 		D991429525CCE89700091FF2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991429425CCE89700091FF2 /* UIView+Extensions.swift */; };
@@ -64,6 +70,12 @@
 		D98FDB1125CC238500726266 /* YJMineCellsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJMineCellsModels.swift; sourceTree = "<group>"; };
 		D98FDB1525CC2A9A00726266 /* MineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineAPI.swift; sourceTree = "<group>"; };
 		D98FDB1A25CC2BAC00726266 /* ReqeustConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustConfig.swift; sourceTree = "<group>"; };
+		D9903CDD25CFDFCD00FBA876 /* OfflineDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadViewController.swift; sourceTree = "<group>"; };
+		D9903CE025CFDFF300FBA876 /* OfflineDownloadTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadTCell.swift; sourceTree = "<group>"; };
+		D9903CE325CFE0F700FBA876 /* HomeNewsTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitleModel.swift; sourceTree = "<group>"; };
+		D9903CE725CFE31E00FBA876 /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		D9903D0025D000AF00FBA876 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		D9903D0325D000DB00FBA876 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D991428825CCD95200091FF2 /* YJBaseTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJBaseTCell.swift; sourceTree = "<group>"; };
 		D991428B25CCD95F00091FF2 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		D991429425CCE89700091FF2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9903D0425D000DB00FBA876 /* libsqlite3.tbd in Frameworks */,
 				A944FDAEB5DFF654AC15287F /* Pods_YJNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +116,7 @@
 		AB4AB456FB5B1FDB238C94A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9903D0325D000DB00FBA876 /* libsqlite3.tbd */,
 				9180E610E672F9B5594B2904 /* Pods_YJNews.framework */,
 			);
 			name = Frameworks;
@@ -151,6 +165,7 @@
 			children = (
 				D91C08C825CD8EB000F1BCCA /* Theme */,
 				D98FDB1925CC2B4400726266 /* Network */,
+				D9903D0025D000AF00FBA876 /* SQLiteManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -172,6 +187,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D9903CE625CFE31600FBA876 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D9903CE725CFE31E00FBA876 /* HomeAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D9E09E3A25CBF9A6007F2842 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +211,7 @@
 		D9E09E3B25CBF9A6007F2842 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D9903CE625CFE31600FBA876 /* Service */,
 				D9E09E3C25CBF9A6007F2842 /* Controller */,
 				D9E09E3E25CBF9A6007F2842 /* Model */,
 				D9E09E3F25CBF9A6007F2842 /* View */,
@@ -206,6 +230,7 @@
 		D9E09E3E25CBF9A6007F2842 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9903CE325CFE0F700FBA876 /* HomeNewsTitleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +335,7 @@
 				D9E09E5025CBF9A6007F2842 /* YJMineViewController.swift */,
 				D9F1AD0A25CE9173001F3AB4 /* MoreLoginViewController.swift */,
 				D9F1AD2025CEDE2D001F3AB4 /* SysSettingViewController.swift */,
+				D9903CDD25CFDFCD00FBA876 /* OfflineDownloadViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +357,7 @@
 				D91EAFD125CD1D3E00F30AC6 /* MineConcernCCell.swift */,
 				D91EAFE225CD330800F30AC6 /* MineNoLoginHeaderView.swift */,
 				D9F1AD2A25CEEEFC001F3AB4 /* SettingTCell.swift */,
+				D9903CE025CFDFF300FBA876 /* OfflineDownloadTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,17 +533,20 @@
 				D9F1AD2B25CEEEFC001F3AB4 /* SettingTCell.swift in Sources */,
 				D9F1AD2125CEDE2D001F3AB4 /* SysSettingViewController.swift in Sources */,
 				D9E09E6125CBF9A6007F2842 /* YJMineViewController.swift in Sources */,
+				D9903CE125CFDFF300FBA876 /* OfflineDownloadTCell.swift in Sources */,
 				D991429525CCE89700091FF2 /* UIView+Extensions.swift in Sources */,
 				D91C08CA25CD8EBD00F1BCCA /* MYTheme.swift in Sources */,
 				D991428925CCD95200091FF2 /* YJBaseTCell.swift in Sources */,
 				D991429B25CCEDEC00091FF2 /* UICollectionView+Extensions.swift in Sources */,
 				D91EAFD225CD1D3E00F30AC6 /* MineConcernCCell.swift in Sources */,
+				D9903CE825CFE31E00FBA876 /* HomeAPI.swift in Sources */,
 				D991429E25CCEF9A00091FF2 /* MineConcernTCell.swift in Sources */,
 				D9F1AD2825CEEAA2001F3AB4 /* SettingModel.swift in Sources */,
 				D98FDB0925CC0D4400726266 /* BaseNetwork.swift in Sources */,
 				D98FDB1225CC238500726266 /* YJMineCellsModels.swift in Sources */,
 				D9E09E6025CBF9A6007F2842 /* SceneDelegate.swift in Sources */,
 				D98FDB0225CBFFD900726266 /* UIColor+Extensions.swift in Sources */,
+				D9903CDE25CFDFCD00FBA876 /* OfflineDownloadViewController.swift in Sources */,
 				D9E09E5E25CBF9A6007F2842 /* AppDelegate.swift in Sources */,
 				D9F1AD0B25CE9173001F3AB4 /* MoreLoginViewController.swift in Sources */,
 				D98FDAFF25CBFD8200726266 /* YJTableViewController.swift in Sources */,
@@ -531,6 +561,8 @@
 				D9E09E5C25CBF9A6007F2842 /* YJVideoViewController.swift in Sources */,
 				D98FDB1625CC2A9A00726266 /* MineAPI.swift in Sources */,
 				D91EAFE325CD330800F30AC6 /* MineNoLoginHeaderView.swift in Sources */,
+				D9903D0125D000AF00FBA876 /* SQLiteManager.swift in Sources */,
+				D9903CE425CFE0F700FBA876 /* HomeNewsTitleModel.swift in Sources */,
 				D991428C25CCD95F00091FF2 /* MineTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

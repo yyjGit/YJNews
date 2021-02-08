@@ -11,7 +11,8 @@ target 'YJNews' do
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'SwiftTheme'
-
+  pod 'SQLite.swift'
+  pod 'lottie-ios'
 #  pod 'RxSwift'
 #  pod 'RxCocoa'
 end

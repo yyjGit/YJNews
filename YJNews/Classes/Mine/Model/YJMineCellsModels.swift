@@ -129,7 +129,6 @@ struct MineConcern: HandyJSON {
     var user_auth_info = UserAuthInfo()
 }
 
-
 struct UserAuthInfo: HandyJSON {
     var auth_type: Int?
     var auth_info: String?

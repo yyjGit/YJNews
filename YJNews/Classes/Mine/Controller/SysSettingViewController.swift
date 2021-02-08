@@ -22,7 +22,7 @@ class SysSettingViewController: YJTableViewController {
 
     
     /// 加载数据
-    private func loadData() {        
+    private func loadData() {
         guard let path = Bundle.main.path(forResource: "setting", ofType: "plist"),
               let sectionArray = NSArray(contentsOfFile: path) as? [[[String : Any]]] else {
             print("setting.plist 文件路径不存在")
@@ -89,6 +89,15 @@ extension SysSettingViewController {
             default:
                 print("")
             }
+        case 1:
+            switch indexPath.row {
+            case 0:
+                let vc = OfflineDownloadViewController()
+                vc.navigationItem.title = "离线下载"
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                print("")
+            }
         default:
             print("")
         }
@@ -98,7 +107,6 @@ extension SysSettingViewController {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 10))
         return view
     }
-
 }
 
 

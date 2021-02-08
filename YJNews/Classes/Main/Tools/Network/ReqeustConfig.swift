@@ -29,6 +29,11 @@ protocol ReqeustConfig {
     associatedtype Response: YJDecodable
 }
 
+extension ReqeustConfig {
+    var baseUrl: String {
+        return BASE_URL
+    }
+}
 
 /// 解析数据协议
 protocol YJDecodable {

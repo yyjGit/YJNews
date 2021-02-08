@@ -16,12 +16,7 @@ extension MineAPI: ReqeustConfig {
 
     // 类型别名
     typealias Response = RespObj
-    
-    /// 主机地址
-    var baseUrl: String {
-        return BASE_URL
-    }
-    
+        
     /// 请求路径
     var path: String {
         switch self {
